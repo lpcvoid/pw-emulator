@@ -9,6 +9,14 @@ Login works, character database works, item deletion/rentention, basic map engin
 
 This should basically be seen as a proof-of-concept to implementing a PW emulator. Many approaches I took should be seen as controversial at best.
 
+#What doesn't work
+
+Pretty much everything else. Also, I have not included my MPPC compressor in this repo, since I do not want it public yet. 
+
+#Pretty pictures
+
+![pic1](img/a_login.jpg)
+
 Use this as-is, but do credit me somewhere where nobody will ever read it anyways, such as a readme.txt.
 
 Greetings
