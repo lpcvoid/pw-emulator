@@ -16,6 +16,18 @@ Pretty much everything else. Also, I have not included my MPPC compressor in thi
 #Pretty pictures
 
 ![pic1](img/a_login.jpg)
+![pic1](img/b_charscreen.jpg)
+![pic1](img/c_charscreen_v2.jpg)
+![pic1](img/d_tasksLoader.jpg)
+![pic1](img/e_watermaps.jpg)
+![pic1](img/f_connection_management.jpg)
+![pic1](img/g_char_custom_data_database.jpg)
+![pic1](img/h_change_equip_database.jpg)
+![pic1](img/i_multiaccount.jpg)
+![pic1](img/j_statusmanager.jpg)
+![pic1](img/l_multichar.jpg)
+![pic1](img/m_almostingame.jpg)
+![pic1](img/n_npcgen_reader.jpg)
 
 Use this as-is, but do credit me somewhere where nobody will ever read it anyways, such as a readme.txt.
 
