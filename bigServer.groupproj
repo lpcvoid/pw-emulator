@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{AC5FE6C6-40AD-43F6-9527-84D9DD49C46D}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="logd.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="pwEmu.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="pwHmapEditor.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="logd">
+        <MSBuild Projects="logd.dproj"/>
+    </Target>
+    <Target Name="logd:Clean">
+        <MSBuild Projects="logd.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="logd:Make">
+        <MSBuild Projects="logd.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="pwEmu">
+        <MSBuild Projects="pwEmu.dproj"/>
+    </Target>
+    <Target Name="pwEmu:Clean">
+        <MSBuild Projects="pwEmu.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="pwEmu:Make">
+        <MSBuild Projects="pwEmu.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="pwHmapEditor">
+        <MSBuild Projects="pwHmapEditor.dproj"/>
+    </Target>
+    <Target Name="pwHmapEditor:Clean">
+        <MSBuild Projects="pwHmapEditor.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="pwHmapEditor:Make">
+        <MSBuild Projects="pwHmapEditor.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="logd;pwEmu;pwHmapEditor"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="logd:Clean;pwEmu:Clean;pwHmapEditor:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="logd:Make;pwEmu:Make;pwHmapEditor:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
